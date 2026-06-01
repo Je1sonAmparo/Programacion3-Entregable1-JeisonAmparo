@@ -41,7 +41,7 @@ GestionAcademica/
 │
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ## 🧑‍💻 Cómo ejecutar el proyecto

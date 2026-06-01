@@ -5,6 +5,7 @@ import java.util.Scanner;
 import clases.Estudiante;
 import clases.Materia;
 import clases.Profesor;
+import clases.Calificacion;
 
 public class GestorAcademico {
 
@@ -64,6 +65,82 @@ public class GestorAcademico {
 
         materias.add(new Materia(codigo, nombre, creditos));
         System.out.println("\nMateria registrada correctamente.");
+    }
+
+    public static void asignarMateria(Scanner sc, ArrayList<Estudiante> estudiantes, ArrayList<Materia> materias) {
+        if (estudiantes.isEmpty() || materias.isEmpty()) {
+            System.out.println("\nDebe haber estudiantes y materias registradas para realizar una asignacion.");
+            return;
+        }
+
+        sc.nextLine();
+        System.out.print("\nIngrese la matricula del estudiante: ");
+        String matricula = sc.nextLine();
+
+        for (Estudiante e : estudiantes) {
+            if (e.getMatricula().equalsIgnoreCase(matricula)) {
+
+                System.out.print("Ingrese el codigo de la materia a asignar: ");
+                String codMateria = sc.nextLine();
+
+                for (Materia m : materias) {
+                    if (m.getCodigo().equalsIgnoreCase(codMateria)) {
+                        e.asignarMateria(m);
+                        System.out.println("\nMateria asignada correctamente al estudiante.");
+                        return;
+                    }
+                }
+
+                System.out.println("Materia no encontrada.");
+                return;
+            }
+        }
+
+        System.out.println("Estudiante no encontrado.");
+    }
+
+    public static void registrarCalificacion(Scanner sc, ArrayList<Estudiante> estudiantes) {
+        if (estudiantes.isEmpty()) {
+            System.out.println("\nNo hay estudiantes registrados.");
+            return;
+        }
+
+        sc.nextLine();
+        System.out.print("\nIngrese la matricula del estudiante: ");
+        String matricula = sc.nextLine();
+
+        for (Estudiante e : estudiantes) {
+            if (e.getMatricula().equalsIgnoreCase(matricula)) {
+
+                ArrayList<Calificacion> listaCalificaciones = e.getCalificaciones();
+                if (listaCalificaciones.isEmpty()) {
+                    System.out.println("El estudiante no tiene materias asignadas.");
+                    return;
+                }
+
+                System.out.println("\n--- Materias del estudiante ---");
+                for (Calificacion c : listaCalificaciones) {
+                    System.out.println("- " + c.getMateria().getCodigo() + " : " + c.getMateria().getNombreMateria());
+                }
+
+                System.out.print("\nIngrese el codigo de la materia para calificar: ");
+                String codMateria = sc.nextLine();
+
+                for (Calificacion c : listaCalificaciones) {
+                    if (c.getMateria().getCodigo().equalsIgnoreCase(codMateria)) {
+                        System.out.print("Ingrese la calificación (0-100): ");
+                        double nota = sc.nextDouble();
+                        c.setNota(nota);
+                        System.out.println("\nCalificacion registrada correctamente.");
+                        return;
+                    }
+                }
+
+                System.out.println("Materia no asignada a este estudiante.");
+                return;
+            }
+        }
+        System.out.println("Estudiante no encontrado.");
     }
 
 }

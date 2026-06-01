@@ -50,34 +50,34 @@ GestionAcademica/
 A continuación, se presentan las capturas de pantalla que demuestran el correcto funcionamiento de cada una de las opciones implementadas en el sistema:
 
 ### 1. Registrar estudiante
-![Registrar estudiante](evidencias/evidencia1.png)
+![Registrar estudiante](src\evidencias\evidencia1.png)
 
 ### 2. Registrar profesor
-![Registrar profesor](evidencias/evidencia2.png)
+![Registrar profesor](src\evidencias/evidencia2.png)
 
 ### 3. Registrar materia
-![Registrar materia](evidencias/evidencia3.png)
+![Registrar materia](src\evidencias/evidencia3.png)
 
 ### 4. Asignar materia a estudiante
-![Asignar materia a estudiante](evidencias/evidencia4.png)
+![Asignar materia a estudiante](src\evidencias/evidencia4.png)
 
 ### 5. Registrar calificacion
-![Registrar calificacion](evidencias/evidencia5.png)
+![Registrar calificacion](src\evidencias/evidencia5.png)
 
 ### 6. Buscar estudiante
-![Buscar estudiante](evidencias/evidencia6.png)
+![Buscar estudiante](src\evidencias/evidencia6.png)
 
 ### 7. Mostrar estudiantes
-![Mostrar estudiantes](evidencias/evidencia7.png)
+![Mostrar estudiantes](src\evidencias/evidencia7.png)
 
 ### 8. Mostrar materias
-![Mostrar materias](evidencias/evidencia8.png)
+![Mostrar materias](src\evidencias/evidencia8.png)
 
 ### 9. Mostrar reporte de promedios
-![Mostrar reporte de promedios](evidencias/evidencia9.png)
+![Mostrar reporte de promedios](src\evidencias/evidencia9.png)
 
 ### 10. Salir
-![Salir](evidencias/evidencia10.png)
+![Salir](src\evidencias/evidencia10.png)
 
 ---
 

@@ -42,6 +42,7 @@ GestionAcademica/
 ├── .gitignore
 └── README.md
 ```
+
 ---
 
 ## 📸 Evidencias del Proyecto
@@ -49,31 +50,31 @@ GestionAcademica/
 A continuación, se presentan las capturas de pantalla que demuestran el correcto funcionamiento de cada una de las opciones implementadas en el sistema:
 
 ### 1. Registrar estudiante
-![Registrar estudiante](evidencias/evidencia1.jpg)
+![Registrar estudiante](evidencias/evidencia1.png)
 
 ### 2. Registrar profesor
-![Registrar profesor](evidencias/evidencia2.jpg)
+![Registrar profesor](evidencias/evidencia2.png)
 
 ### 3. Registrar materia
-![Registrar materia](evidencias/evidencia3.jpg)
+![Registrar materia](evidencias/evidencia3.png)
 
 ### 4. Asignar materia a estudiante
-![Asignar materia a estudiante](evidencias/evidencia4.jpg)
+![Asignar materia a estudiante](evidencias/evidencia4.png)
 
 ### 5. Registrar calificacion
-![Registrar calificacion](evidencias/evidencia5.jpg)
+![Registrar calificacion](evidencias/evidencia5.png)
 
 ### 6. Buscar estudiante
-![Buscar estudiante](evidencias/evidencia6.jpg)
+![Buscar estudiante](evidencias/evidencia6.png)
 
 ### 7. Mostrar estudiantes
-![Mostrar estudiantes](evidencias/evidencia7.jpg)
+![Mostrar estudiantes](evidencias/evidencia7.png)
 
 ### 8. Mostrar materias
-![Mostrar materias](evidencias/evidencia8.jpg)
+![Mostrar materias](evidencias/evidencia8.png)
 
 ### 9. Mostrar reporte de promedios
-![Mostrar reporte de promedios](evidencias/evidencia9.jpg)
+![Mostrar reporte de promedios](evidencias/evidencia9.png)
 
 ### 10. Salir
 ![Salir](evidencias/evidencia10.png)

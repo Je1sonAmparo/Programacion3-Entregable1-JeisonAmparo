@@ -44,6 +44,42 @@ GestionAcademica/
 ```
 ---
 
+## 📸 Evidencias del Proyecto
+
+A continuación, se presentan las capturas de pantalla que demuestran el correcto funcionamiento de cada una de las opciones implementadas en el sistema:
+
+### 1. Registrar estudiante
+![Registrar estudiante](evidencias/evidencia1.jpg)
+
+### 2. Registrar profesor
+![Registrar profesor](evidencias/evidencia2.jpg)
+
+### 3. Registrar materia
+![Registrar materia](evidencias/evidencia3.jpg)
+
+### 4. Asignar materia a estudiante
+![Asignar materia a estudiante](evidencias/evidencia4.jpg)
+
+### 5. Registrar calificacion
+![Registrar calificacion](evidencias/evidencia5.jpg)
+
+### 6. Buscar estudiante
+![Buscar estudiante](evidencias/evidencia6.jpg)
+
+### 7. Mostrar estudiantes
+![Mostrar estudiantes](evidencias/evidencia7.jpg)
+
+### 8. Mostrar materias
+![Mostrar materias](evidencias/evidencia8.jpg)
+
+### 9. Mostrar reporte de promedios
+![Mostrar reporte de promedios](evidencias/evidencia9.jpg)
+
+### 10. Salir
+![Salir](evidencias/evidencia10.png)
+
+---
+
 ## 🧑‍💻 Cómo ejecutar el proyecto
 
 1. Clona el repositorio:

@@ -50,7 +50,7 @@ GestionAcademica/
 A continuación, se presentan las capturas de pantalla que demuestran el correcto funcionamiento de cada una de las opciones implementadas en el sistema:
 
 ### 1. Registrar estudiante
-![Registrar estudiante](evidencias\evidencia1.png)
+![Registrar estudiante](evidencias/evidencia1.png)
 
 ### 2. Registrar profesor
 ![Registrar profesor](evidencias/evidencia2.png)

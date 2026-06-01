@@ -143,4 +143,89 @@ public class GestorAcademico {
         System.out.println("Estudiante no encontrado.");
     }
 
+    public static void buscarEstudiante(Scanner sc, ArrayList<Estudiante> estudiantes) {
+        if (estudiantes.isEmpty()) {
+            System.out.println("\nNo hay estudiantes registrados.");
+            return;
+        }
+
+        sc.nextLine();
+        System.out.print("\nIngrese la matricula o el nombre a buscar: ");
+        String busqueda = sc.nextLine().toLowerCase();
+
+        int coincidencias = 0;
+
+        System.out.println("\n=== RESULTADO DE BUSQUEDA ===");
+        System.out.println("-------------------------");
+
+        for (Estudiante e : estudiantes) {
+            if (e.getMatricula().toLowerCase().equals(busqueda) || e.getNombre().toLowerCase().contains(busqueda)) {
+                e.mostrarInformacion();
+                coincidencias++;
+            }
+        }
+
+        if (coincidencias == 0) {
+            System.out.println("No se encontro ningun estudiante.");
+        }
+    }
+
+    public static void mostrarEstudiantes(ArrayList<Estudiante> estudiantes) {
+        if (estudiantes.isEmpty()) {
+            System.out.println("\nNo hay estudiantes registrados.");
+        } else {
+            System.out.println("\n=== ESTUDIANTES REGISTRADOS ===");
+            System.out.println("-------------------------");
+            for (Estudiante e : estudiantes) {
+                e.mostrarInformacion();
+            }
+        }
+    }
+
+    public static void mostrarMaterias(ArrayList<Materia> materias) {
+        if (materias.isEmpty()) {
+            System.out.println("\nNo hay materias registradas.");
+        } else {
+            System.out.println("\n=== MATERIAS REGISTRADAS ===");
+            System.out.println("-------------------------");
+            for (Materia m : materias) {
+                m.mostrarMateria();
+            }
+        }
+    }
+
+    public static void mostrarReportePromedios(ArrayList<Estudiante> estudiantes) {
+        if (estudiantes.isEmpty()) {
+            System.out.println("\nNo hay estudiantes registrados.");
+            return;
+        }
+
+        System.out.println("\n=== REPORTE DE PROMEDIOS ===");
+        System.out.println("-------------------------");
+        for (Estudiante e : estudiantes) {
+            double suma = 0;
+            int contNotas = 0;
+
+            for (Calificacion c : e.getCalificaciones()) {
+                if (c.getNota() != -1) {
+                    suma += c.getNota();
+                    contNotas++;
+                }
+            }
+
+            double promedio = (contNotas > 0) ? (suma / contNotas) : 0;
+            String estado = (promedio >= 70) ? "Aprobado" : "Reprobado";
+
+            System.out.println("Matricula: " + e.getMatricula());
+            System.out.println("Nombre: " + e.getNombre() + " " + e.getApellido());
+            System.out.printf("Promedio General: %.2f\n", promedio);
+
+            if (contNotas > 0) {
+                System.out.println("Estado: " + estado);
+            } else {
+                System.out.println("Estado: Sin calificaciones asignadas");
+            }
+            System.out.println("-------------------------");
+        }
+    }
 }
